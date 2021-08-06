@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay healthy GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            font-family: 'Concert One', cursive;
+            margin: 0px;
+            padding:0px;
+            background:url('sports.jpg');
+            height: 1000px;
+            color: honeydew;
+        }
+        .left
+        {
+          /* border: 2px solid indianred; */
+          display: inline-block;
+          position:absolute;
+        top:10px;
+        left:20px;
+        }
+        .mid
+        {
+        display: block;
+        width:45%;
+        margin:20px auto;
+        border: 2px solid rgb(119, 38, 151);
+        background-color: rgb(247, 225, 225);
+         border-radius:10px ;
+    }
+    .right
+    {
+        position: fixed;
+        bottom:0px;
+        right:0px;
+        border: 2px solid rgb(98, 8, 182);
+        border-radius: 10px;
+        display: inline-block;
+        background-color: rgb(247, 225, 225);
+    }
+    .navbar
+    {
+        display: inline-block;
+        position: sticky;
+        top: 0px;
+    }
+    .navbar li
+        {
+            display: inline-block;
+            font-size: 30px;
+        }
+        .navbar li a{
+            color: rgb(8, 8, 8);
+            text-decoration: none;
+            padding: 20px;
+        }
+        .navbar li a:hover, .navbar li a.active
+        {
+            text-decoration: underline;
+            color: rgb(224, 137, 137);
+            background-color: rgb(231, 201, 201);
+        }
+        .left img
+        {
+            height:140px;
+            filter: invert(100%);
+            text-align: center;
+        }
+        .left div
+        {
+            text-align: center;
+            color: black;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        .btn
+        {
+          margin: 0px 20px;
+          font-family: 'Concert One', cursive;
+          background-color: black;
+          color:white ;
+          padding: 10px 10px 10px 10px;
+          border: 2px solid grey;
+          border-radius: 10px;
+          font-size: 15px;
+          cursor: pointer;
+        }
+        .btn:hover
+        {
+            color: grey;
+            background-color: rgb(231, 201, 201);
+        }
+        .container
+        {
+          /* border:2px solid red; */
+          display: inline-block;
+          margin:150px 20px;
+          padding: 10px;
+          border-radius: 20px;
+          font-size: 20px;
+          width:43%;
+          color: rgb(223, 146, 146);
+          font-size: 40px;
+        }
+        .mid li a
+        {
+            color: rgb(233, 105, 105);
+        }
+        .formgrp input
+        {
+            font-family: 'Concert One', cursive;
+           text-align: center;
+           font-size: 20px;
+           border-radius: 2px;
+           display: inline-block;
+           border: 10px solid rgb(17, 16, 16);
+           width: 43%;
+           margin: 5px;
+           height: 30px;
+           padding: 5px;
+          border-radius: 20px;
+        }
+        .container button{
+            display: block;
+            width: 20%;
+            margin: 20px 80px;
+        }
+        
+        #t
+        {
+            margin:0px 51px;
+            color: rgb(8, 8, 8);
+        }
+        /* #me
+        {
+            position: sticky;
+            top:0px;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+       <div class="left">
+           <img src="gym.jpg" alt="">
+           <div>Stay healthy Gym</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active" id="me">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+       <div class="right">
+        <button class="btn">CHAT</button>
+        <button class="btn">Email Us</button>
+        
+       </div>
+    </header>
+    <div class="container">
+        <div id="t">JOIN NOW!!</div>
+     <form action="noaction.php">
+         <div class="formgrp">
+             <input type="text" name="1" placeholder="write your First Name">
+         </div>
+         <div class="formgrp">
+            <input type="text" name="1" placeholder="write your Last Name">
+        </div>
+         <div class="formgrp">
+            <input type="text" name="1" placeholder="write your age here">
+        </div>
+        <div class="formgrp">
+            <input type="text" name="1" placeholder="write your mobile number">
+        </div>
+        <div class="formgrp">
+            <input type="text" name="1" placeholder="write your address here">
+        </div>
+        <div class="formgrp">
+            <input type="text" name="1" placeholder="write your pin-code here">
+        </div>
+        <button class="btn">SUBMIT</button>
+     </form>
+    </div>
+</body>
+</html>
